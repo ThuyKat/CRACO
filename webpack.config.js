@@ -1,7 +1,7 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 module.exports ={
-    // tell webpack where the entrance point of our application is: index.js inside a folder called src. Which file to use to create dependency graph, resolve modules that one depends on the other --> so we need to build the module that required by the other modules first
+    // tell webpack where the starting point of our application is: index.js inside a folder called src. Which file to use to create dependency graph, resolve modules that one depends on the other --> so we need to build the module that required by the other modules first
     entry: './src/index.js',
     output :{
         path: path.join(__dirname,'/dist'),
